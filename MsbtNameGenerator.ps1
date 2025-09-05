@@ -55,12 +55,23 @@ $num = $startat
 # This lets us get our sentence case standard
 $SentenceInfo = [System.Globalization.CultureInfo]::CurrentCulture
 
+
 # Outputs the char1 part of the msbt (the name that shows up when you select them)
 foreach($n in $name) {
-	Write-Output "	<entry label=`"nam_char1_0$($num)_$($internalname)`">"
+if($num -eq 0)
+{
+	Write-Output "	<entry label=`"nam_chr0_0$($num)_$($internalname)`">"
 	Write-Output "		<text>$($SentenceInfo.TextInfo.ToTitleCase($n.ToLower()))</text>"
 	Write-Output "	</entry>"
 	$num++
+}
+else{
+
+	Write-Output "	<entry label=`"nam_chr1_0$($num)_$($internalname)`">"
+	Write-Output "		<text>$($SentenceInfo.TextInfo.ToTitleCase($n.ToLower()))</text>"
+	Write-Output "	</entry>"
+	$num++
+}
 }
 
 # Resets our counter so our second loop can function like the first
@@ -68,7 +79,7 @@ $num = $startat
 
 # Outputs the char2 part of the msbt (the name that shows up when you enter + win a match)
 foreach($n in $name) {
-	Write-Output "	<entry label=`"nam_char2_0$($num)_$($internalname)`">"
+	Write-Output "	<entry label=`"nam_chr2_0$($num)_$($internalname)`">"
 	Write-Output "		<text>$($n.ToUpper())</text>"
 	Write-Output "	</entry>"
 	$num++
