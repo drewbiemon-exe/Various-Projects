@@ -18,8 +18,8 @@ EX Input:
 .\MsbtNameGenerator.ps1 -name "kirby, pikachu, perfect cell" -startat 3 -internalname "demon"
 
 EX Output:
-
-```        <entry label="nam_char1_03_demon">
+```
+        <entry label="nam_char1_03_demon">
                 <text>Kirby</text>
         </entry>
         <entry label="nam_char1_04_demon">
@@ -37,7 +37,7 @@ EX Output:
         <entry label="nam_char2_05_demon">
                 <text>PERFECT CELL</text>
         </entry>
-
+```
 These can now be copy and pasted into whatever template you'd prefer. I'd recommend this one, especially if you're trying to modify almost every skin in the game like I have: https://gamebanana.com/tools/8100
 
 That's about it!
