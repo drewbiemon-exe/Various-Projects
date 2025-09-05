@@ -58,20 +58,10 @@ $SentenceInfo = [System.Globalization.CultureInfo]::CurrentCulture
 
 # Outputs the char1 part of the msbt (the name that shows up when you select them)
 foreach($n in $name) {
-if($num -eq 0)
-{
-	Write-Output "	<entry label=`"nam_chr0_0$($num)_$($internalname)`">"
-	Write-Output "		<text>$($SentenceInfo.TextInfo.ToTitleCase($n.ToLower()))</text>"
-	Write-Output "	</entry>"
-	$num++
-}
-else{
-
 	Write-Output "	<entry label=`"nam_chr1_0$($num)_$($internalname)`">"
 	Write-Output "		<text>$($SentenceInfo.TextInfo.ToTitleCase($n.ToLower()))</text>"
 	Write-Output "	</entry>"
 	$num++
-}
 }
 
 # Resets our counter so our second loop can function like the first
