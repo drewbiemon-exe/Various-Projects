@@ -19,22 +19,22 @@ EX Input:
 
 EX Output:
 ```
-        <entry label="nam_char1_03_demon">
+        <entry label="nam_chr1_03_demon">
                 <text>Kirby</text>
         </entry>
-        <entry label="nam_char1_04_demon">
+        <entry label="nam_chr1_04_demon">
                 <text>Pikachu</text>
         </entry>
-        <entry label="nam_char1_05_demon">
+        <entry label="nam_chr1_05_demon">
                 <text>Perfect Cell</text>
         </entry>
-        <entry label="nam_char2_03_demon">
+        <entry label="nam_chr2_03_demon">
                 <text>KIRBY</text>
         </entry>
-        <entry label="nam_char2_04_demon">
+        <entry label="nam_chr2_04_demon">
                 <text>PIKACHU</text>
         </entry>
-        <entry label="nam_char2_05_demon">
+        <entry label="nam_chr2_05_demon">
                 <text>PERFECT CELL</text>
         </entry>
 ```
